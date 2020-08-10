@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>About Better Daze</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="<%= static_path + "/bootstrap/css/theme/" + theme + "/bootstrap.css" %>" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="<%= static_path + "/bootstrap/css/jumbotron-narrow.css" %>" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/">Home</a></li>
+          <li class="active"><a href="about">About</a></li>
+          <li><a href="message">Send Message</a></li>
+        </ul>
+        <h3 class="text-muted">Better Daze Recovery Service</h3>
+      </div>
+	  <% if (flask_debug === 'true') { %>
+      <div class="alert alert-danger">
+      	Flask is in debug mode. This is not safe for production.
+      </div>
+      <% } %>
+      
+      <div class="jumbotron">
+        <h1>Build A Better Recovery</h1>
+        <p class="lead">With daily messaging and help available at the tip of your fingers, feel confident in your recovery!</p>
+      </div>
+      <!-- make a stylized container -->
+      <div class="container">
+        <h3>About Better Daze Recovery Service</h3>
+        <p>   Better Daze Recovery Service keep you in contact with the Never Alone Recovery Team 24/7. Every day, you will receive a message from the team to help guide
+          you in your recovery and stay on track. If you are ever struggling, a simple text message is all it takes for one of our team members to reach out to you.
+        </p>
+      </div>
+      
+      <!-- /end -->
+
+      <div class="footer">
+        <p>&copy; Never Alone Recovery 2020</p>
+      </div>
+      
+     
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
